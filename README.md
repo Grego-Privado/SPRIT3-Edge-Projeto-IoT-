@@ -1,3 +1,14 @@
+NOMES:
+Azor Biagioni Tartuce RM:563995
+Victor Altieri RM: 565288
+Pedro Henrique Silva Gregolini RM:
+563342
+Rafael Falaguasta RM: 561714
+
+Video: https://youtu.be/Bhuow8L2wwM?si=RkDkDyBJF6aJgN_3
+Wokwi: https://wokwi.com/projects/442306782044564481
+
+
 # Passa a Bola — Monitor de Temperatura & Umidade
 **ESP32 + DHT22 + FIWARE (IoT Agent MQTT)**
 
@@ -13,7 +24,7 @@ Expor **apenas os valores atuais** `temperature` (°C) e `humidity` (%) para uso
 
 ##  Visão rápida
 - **ESP32 + DHT22** (DATA → **GPIO 4**, VCC → **3V3**, GND → **GND**)
-- **MQTT Topics (UL 2.0 – payload numérico):**
+- **MQTT Topics:**
   - `/TEF/field001/attrs/t` → `26.4`
   - `/TEF/field001/attrs/h` → `68.2`
 - **Entidade Orion:**
@@ -29,9 +40,10 @@ Dispositivo (ESP32/DHT22) → MQTT → **IoT Agent MQTT** (porta **4041**) → *
 ---
 
 ## Pré-requisitos
+- Maquina Virtual (Azure)
 - FIWARE rodando (IoT Agent, Orion; opcional STH-Comet)
 - Postman com a coleção **DHT FIWARE**
-- Wokwi/Arduino IDE/PlatformIO com as libs: `PubSubClient`, `DHT sensor library`, `Adafruit Unified Sensor`
+- Wokwi/Arduino IDE/PlatformIO 
 
 ---
 
